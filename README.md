@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![login](https://github.com/user-attachments/assets/0c44fda2-fb73-42e7-a548-63e8e508a15c)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Harry Potter Quizzes Trivia Web Application Built Using ReactJS
 
-## Available Scripts
+This is a Web Application built using ReactJS, MaterialUI. Integrated with ASP.NET Core Web API and SQL Server Database. See the documentation for Quiz Backend API [here](https://github.com/shofwanshiddiq/QuizAPI)
 
-In the project directory, you can run:
+### Features
+* User registration & login
+* Generate random 5 questions & answers from all questions available in the database
+* Perform score calculation based on users choice and answers
+* Calculate time taken by user for taking the test
+* Submit score and save the result to database
 
-### `npm start`
+## Technologies
+![React.js](https://img.shields.io/badge/React.js-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)  ![Material-UI](https://img.shields.io/badge/Material--UI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)  ![Axios](https://img.shields.io/badge/Axios-%23000000.svg?style=for-the-badge&logo=axios&logoColor=white)  ![React Router](https://img.shields.io/badge/React_Router-%23CA4245.svg?style=for-the-badge&logo=react-router&logoColor=white)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API Endpoints Documentation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Method     | API Endpoint               | Description                                      |
+|------------|----------------------------|--------------------------------------------------|
+| **POST**   | `/api/Participant`            | Create a new participant                              |
+| **GET**   | `/api/Participant`            | Get all participant data                              |
+| **GET**   | `/api/Participant/{id}`            | Get participant data by ID                            |
+| **PUT**   | `/api/Participant/{id}`            | Update participant data by ID                            |
+| **DELETE**   | `/api/Participant/{id}`            | Delete participant data by ID                            |
+| **POST**   | `/api/Question/GetAnswers`            | Get questions answer by question id                |
+| **GET**   | `/api/Question`            | Get all questions                      |
+| **GET**   | `/api/Question/{id}`            | Get question by ID                      |
+| **PUT**   | `/api/Question/{id}`            | Update question data by ID                      |
+| **DELETE**   | `/api/Question/{id}`            | Delete question data by ID                      |
 
-### `npm test`
+# Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to set up the project:
 
-### `npm run build`
+### 1. Install Required Dependencies & Libraries
+```bash
+npm install ajv
+npm install @mui/material
+npm install @mui/icons-material
+npm install axios
+npm install react-router-dom
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Make Sure Backend API is Running
+* Make sure backend API is already running on port http://localhost:5272/
+* Get the documentation for Quiz Backend API [here](https://github.com/shofwanshiddiq/QuizAPI)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Start the Project
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Gallery
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://github.com/user-attachments/assets/1acb953e-fce9-43b7-9efc-0cdb2083f14e" alt="Image 1" style="width: 400px;">
+<img src="https://github.com/user-attachments/assets/8f45480d-fc0e-4329-9c0e-0ed565fc2ca1" alt="Image 2" style="width: 400px;">
+<img src="https://github.com/user-attachments/assets/375a0802-13ab-4c63-a9b0-b697a6c6ddfb" alt="Image 3" style="width: 400px;">
